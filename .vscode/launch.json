@@ -1,0 +1,30 @@
+{
+  "version": "0.2.0",
+
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Launch JavaFX App",
+      "request": "launch",
+      "mainClass": "com.livesigntranslator/com.livesigntranslator.MainApplication",
+      "projectName": "frontend-java"
+    },
+
+    {
+      "name": "Launch FastAPI",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "uvicorn",
+      "cwd": "${workspaceFolder}/backend-python",
+      "args": ["app.main:app", "--reload"],
+      "jinja": true
+    }
+  ],
+
+  "compounds": [
+    {
+      "name": "Launch Full System",
+      "configurations": ["Launch FastAPI", "Launch JavaFX App"]
+    }
+  ]
+}

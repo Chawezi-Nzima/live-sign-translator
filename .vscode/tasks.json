@@ -1,0 +1,32 @@
+{
+  "version": "2.0.0",
+
+  "tasks": [
+    {
+      "label": "Java: Run",
+      "type": "shell",
+      "command": "mvn javafx:run",
+      "options": {
+        "cwd": "${workspaceFolder}/frontend-java"
+      }
+    },
+
+    {
+      "label": "Python: Start API",
+      "type": "shell",
+      "command": ".venv\\Scripts\\python -m uvicorn app.main:app --reload",
+      "options": {
+        "cwd": "${workspaceFolder}/backend-python"
+      }
+    },
+
+    {
+      "label": "ML: Train Model",
+      "type": "shell",
+      "command": ".venv\\Scripts\\python ml/training/train.py",
+      "options": {
+        "cwd": "${workspaceFolder}/backend-python"
+      }
+    }
+  ]
+}

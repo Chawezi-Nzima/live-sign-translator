@@ -1,0 +1,12 @@
+{
+  "folders": [
+    {
+      "path": ".",
+    },
+  ],
+  "settings": {
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "python.defaultInterpreterPath": "C:\\Users\\Chawezi-Nzima\\Projects\\live-sign-translator\\backend-python\\.venv\\Scripts\\python.exe",
+    "cSpell.words": ["livesigntranslator"],
+  },
+}
